@@ -743,7 +743,121 @@ button.form-control:hover{
 		  		border-radius: 4px;
 		  		margin-bottom: 10px !important;
 		  	}
-
+			  .flex-row {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-flex-wrap: wrap;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+				padding: 0;
+				margin: 0;
+				width: 100%;
+			}
+			.flex-row .flex-column {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				padding: 0;
+			}
+			.widget.widget-wizard .wizard .steps .step {
+				display: block;
+				background-color: white;
+				color: #676a6c;
+				border: 1px solid #e7eaec;
+				border-radius: 5px;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				white-space: nowrap;
+			}
+			.widget.widget-wizard .wizard .steps .step:hover{
+				background-color:#fafafb;cursor:pointer;
+				text-decoration: none;
+			}
+			.widget.widget-wizard .wizard.wizard-icons .steps .step {
+				margin: 5px;
+				-webkit-box-shadow: 0 2px 2px 0 rgb(144 144 144 / 14%), 0 3px 1px -2px rgb(255 255 255 / 0%), 0 1px 5px 0 rgb(145 145 145 / 12%);
+				box-shadow: 0 2px 2px 0 rgb(144 144 144 / 14%), 0 3px 1px -2px rgb(255 255 255 / 0%), 0 1px 5px 0 rgb(145 145 145 / 12%);
+				border: 0;
+			}
+			.widget.widget-wizard .wizard .steps .step.current {
+				background-color: #00acb8;
+				color: white;
+			}
+			.widget.widget-wizard .wizard.wizard-icons .steps .step .content {
+				padding: 10px 15px;
+			}
+			.display-flex {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				-ms-flex-align: center;
+				align-items: center;
+			}
+			.display-flex .flex-grow {
+				-webkit-box-flex: 1;
+				-webkit-flex-grow: 1;
+				-ms-flex-positive: 1;
+				flex-grow: 1;
+			}
+			.widget.widget-wizard .wizard .steps .step .title {
+				vertical-align: middle;
+			}
+			.widget.widget-wizard .wizard.wizard-icons .steps .step .content .title {
+				font-size: 1.3em;
+				font-weight: 400;
+				display: block;
+				width: 100%;
+			}
+			.widget.widget-wizard .wizard.wizard-icons .steps .step .content .description {
+				font-weight: 300;
+				color: #888;
+				white-space: normal;
+			}
+			.widget.widget-wizard .wizard.wizard-icons .steps .step .content .description {
+				font-size: 9px;
+			}
+			@media screen and (min-width: 1200px){
+				.widget.widget-wizard .wizard.wizard-icons .steps .step .content .description {
+					font-size: -webkit-calc(9px + 3 * ((100vw - 1200px) / 400));
+					font-size: calc(9px + 3 * ((100vw - 1200px) / 400));
+				}
+				.widget.widget-wizard .wizard.wizard-icons .steps .step .content .description {
+					font-size: 12px;
+				}
+			}
+			
+			@media (max-width: 768px) {
+				.widget.widget-wizard .wizard.wizard-icons .steps .step .content .description {
+					font-size: 14px;
+				}
+			}
+			.widget.widget-wizard .wizard.wizard-icons .steps .step.current .content .description {
+				color: white;
+			}
+			.widget.widget-wizard .wizard .steps .step .icon {
+				position: relative;
+			}
+			.material-icons.md-24, .fa.md-24 {
+				font-size: 24px;
+			}
+			.widget.widget-wizard .wizard.wizard-icons {
+				margin: -5px;
+			}
+			
+			
+			
+			
  /*!
  * FullCalendar v3.9.0
  * Docs & License: https://fullcalendar.io/
